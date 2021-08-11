@@ -4,7 +4,7 @@ const cors = require("cors");
 var bodyParser = require('body-parser');
 var corsOptions = {
     //origin: "http://localhost:8081",
-    origin: "https://arcrodinapp.herokuapp.com/",
+    origin: "https://arcrodinapp.herokuapp.com",
   };
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
