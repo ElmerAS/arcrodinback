@@ -27,9 +27,9 @@ require('./app/routes/cliente.router')(app);
 require('./app/routes/proforma.router')(app);
 require('./app/routes/contacto.router')(app);
 
-const server = app.listen(8000, function () {
-    let host = server.address().address
-    let port = server.address().port
+const server = app.listen(process.env.PORT || 8000, function () {
+    //let host = server.address().address
+    //let port = server.address().port
 
-    console.log('Server listening on ', host, port);
+    console.log('Server listening...');
 })
